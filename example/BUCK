@@ -1,0 +1,19 @@
+cxx_binary(
+  name = 'basic', 
+  srcs = [
+    '01-basic.cpp', 
+  ],
+  deps = [
+    '//:expected-lite', 
+  ], 
+)
+
+cxx_binary(
+  name = 'required', 
+  srcs = [
+    '02-required.cpp', 
+  ],
+  deps = [
+    '//:expected-lite', 
+  ], 
+)
